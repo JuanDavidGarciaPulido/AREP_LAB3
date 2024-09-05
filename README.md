@@ -62,20 +62,22 @@ Before install and run the project you will need:
    java -cp target/lab03Arep-1.0-SNAPSHOT.jar edu.escuelaing.arep.app.SpringECI edu.escuelaing.arep.app.HelloService
    ```
 
-   (FOTO)
+   <img width="1178" alt="Captura de pantalla 2024-09-04 a la(s) 11 51 52 p  m" src="https://github.com/user-attachments/assets/c6ab4f5f-5bd1-4ce2-b3cd-5e7b9b852634">
+
 
 5. **Run the HTTP Server**:
     ``` bash
    java -cp target/classes edu.escuelaing.arep.app.SimpleHTTPServer
    ```
 
-   (FOTO)
+   <img width="846" alt="Captura de pantalla 2024-09-04 a la(s) 11 52 41 p  m" src="https://github.com/user-attachments/assets/655a4b90-0361-4490-bccc-26933e6596da">
 
 Access the Web Server:
 - Open a web browser and navigate to `http://localhost:8080/index.html`.
 - The server will serve files from the `src/main/resources` directory.
-     
-(FOTO)
+
+<img width="846" alt="image" src="https://github.com/user-attachments/assets/6910bbca-bb6f-4e13-aee7-bc717c96a47b">
+
 
 
 
