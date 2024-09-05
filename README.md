@@ -4,6 +4,20 @@ A web server developed in Java, capable of serving HTML pages and PNG images. Th
 
 Additionally, a minimal prototype was created to showcase Java's reflective capabilities. This prototype successfully loads a bean (POJO) and generates a web application based on it, highlighting the server's flexibility and extensibility.
 
+## Project Architecture
+
+1. **Annotations:**
+   - `@GetMapping`: Defines HTTP GET request mappings for methods.
+   - `@RequestParam`: Specifies request parameters for methods.
+   - `@RestController`: Marks a class as a REST controller that handles HTTP requests.
+     
+2. **Components:**
+   - **HelloService**: A REST controller that provides various endpoints for different functionalities (greeting, time, hello, bye).
+   - **SimpleHTTPServer**: A basic HTTP server that listens for incoming requests, handles them, and serves static files or responses based on defined routes.
+   - **SpringECI**: A utility class for invoking methods in a service class based on a URL, demonstrating parameter extraction from query strings.
+   - **JUnitECI**: A simple testing framework that runs tests annotated with `@Test` and reports their outcomes.
+   - **ClassToBeTested**: A class with methods annotated with `@Test` to be used for testing.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -12,7 +26,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 Before install and run the project you will need:
 
-1. **Java** (version 21)
+1. **Java** (version 17)
 
 2. **Maven**
     - Download Maven from [here](http://maven.apache.org/download.html)
@@ -23,51 +37,46 @@ Before install and run the project you will need:
 
 ### Installing
 
-1. Clone the repository and navigate into the project directory:
+1. **Clone the repository and navigate into the project directory**:
     ```sh
     git clone https://github.com/JuanDavidGarciaPulido/AREP_LAB3.git
 
     cd AREP_LAB3
     ```
 
-2. Compile the project:
+2. **Compile the project**:
    ``` bash
    mvn clean install
    ```
 
-3. Run the test:
+3. **Run the test**:
    ``` bash
-   java -cp target/reflexion-app-1.0-SNAPSHOT.jar edu.escuelaing.arem.ASE.app.MyOwnJUnit.JUnitECI edu.escuelaing.arem.ASE.app.MyOwnJUnit.ClassToBeTested
+   java -cp target/lab03Arep-1.0-SNAPSHOT.jar edu.escuelaing.arep.app.MyOwnTest.JUnitECI edu.escuelaing.arep.app.MyOwnTest.ClassToBeTested
     ```
 
-4. Run the SpringECI Utility:
+   (FOTO)
+
+4. **Run the SpringECI Utility**:
     ``` bash
-   java -cp target/reflexion-app-1.0-SNAPSHOT.jar edu.escuelaing.arem.ASE.app.SpringECI edu.escuelaing.arem.ASE.app.HelloService
+   java -cp target/lab03Arep-1.0-SNAPSHOT.jar edu.escuelaing.arep.app.SpringECI edu.escuelaing.arep.app.HelloService
    ```
 
-5. Run the HTTP Server:
+   (FOTO)
+
+5. **Run the HTTP Server**:
     ``` bash
-   java -cp target/classes edu.escuelaing.arem.ASE.app.SimpleHttpServer
+   java -cp target/classes edu.escuelaing.arep.app.SimpleHTTPServer
    ```
 
-3. **Access the Web Server**:
-   - Open a web browser and navigate to `http://localhost:8080/index.html`.
-   - The server will serve files from the `src/main/webroot` directory.
+   (FOTO)
+
+Access the Web Server:
+- Open a web browser and navigate to `http://localhost:8080/index.html`.
+- The server will serve files from the `src/main/resources` directory.
      
-**Static Files**:
+(FOTO)
 
-![image](https://github.com/user-attachments/assets/fcbfc896-2723-47de-b8b7-5ffe44ee6173)
 
-![image](https://github.com/user-attachments/assets/1dd02b6e-f21e-48ef-9b01-c4bc46e3ade9)
-
-**GET Requests**:
-- **Greeting**: Access the URL `/App/hello` with and without query parameters to verify the greeting functionality. Example: `http://localhost:8080/App/hello?name=JuanDavid`.
-
-![image](https://github.com/user-attachments/assets/894367b2-66eb-449a-95e1-daf6c647e78c)
-
-- **Pi Value**: Access the URL `/App/pi` to check that the server correctly returns the value of pi.
-
-![image](https://github.com/user-attachments/assets/ff13af99-102e-43ff-991e-f11c48647aea)
 
 ## Configuration
 - **Web Root Directory**: The server serves files from the `src/main/webroot/` directory by default.
@@ -76,7 +85,7 @@ Before install and run the project you will need:
 
 ## Project Structure
 ```
-SimpleWebServer/
+AREP_LAB3/
 │
 ├───src/
 │   ├───main/
@@ -85,20 +94,20 @@ SimpleWebServer/
 │   │   │       └───escuelaing/
 │   │   │           └───arep/
 │   │   │               └───app/
-│   │   │                   ├───SimpleWebServer
-│   │   │                   ├───App
-│   │   │                   ├───Request
-│   │   │                   ├───Response
-│   │   │                   ├───Service
+│   │   │                   ├───MyOwnTest
+│   │   │                   ├───MyOwnSpringboot
+│   │   │                   
+│   │   │                   
+│   │   │                   
 │   │   │               
 │   │   │
 │   │   │
-│   │   └───webroot/        
-│   │       ├───index.html  
-│   │       ├───styles.css  
-│   │       ├───app.js      
-│   │       ├───manzanas.png
-│   │       └───... (other resources)
+│   │   └───resources    
+│   │       
+│   │      
+│   │          
+│   │      
+│   │       
 │   │    
 │   │
 │   │
@@ -109,10 +118,10 @@ SimpleWebServer/
 │               └───escuelaing/
 │                   └───arep/
 │                       └───app/
-│                            ├───AppTest
-│                            ├───RequestTest
-│                            ├───ResponseTest
-│                            ├───WebServerTest
+│                            
+│                            
+│                           
+│                           
 │                   
 ```
 
@@ -122,24 +131,19 @@ Run the command:
    mvn test
 ```
 
-![image](https://github.com/user-attachments/assets/c22c039b-7bfb-4285-9b16-fc805256cd68)
+(FOTO)
 
 ### Test Descriptions
 #### 1. AppTest
-testGet: Verifies that a GET route is registered correctly and appears in the service map.
-testStaticFiles: Ensures that the static files location is set properly in the application.
-#### 2. RequestTest
-testEmptyQueryString: Checks that a request with an empty query string returns null for any parameter value.
-testNullQueryString: Ensures that a request with a null query string returns null for any parameter value.
-testGetValues: Verifies that a request with a properly formatted query string correctly retrieves parameter values.
-testGetValuesWithMalformedQuery: Tests that a request with a malformed query string returns the expected values for well-formed parameters and null for incomplete parameters.
-#### 3. ResponseTest
-testSetAndGetBody: Verifies that the body of the response can be set and retrieved correctly.
-testSetBodyWithNull: Ensures that setting the response body to null is handled properly.
-testSetBodyWithEmptyString: Confirms that setting the response body to an empty string is managed correctly.
-#### 4. WebServerTest
-testGetInstance: Verifies that the SimpleWebServer singleton pattern returns the same instance for multiple calls.
-testStartServer: Checks that a ServerSocket can be created on port 8080, ensuring the server can start without issues.
+This class, AppTest, is a unit test for the App class using JUnit's TestCase. This serves as a minimal, placeholder test to ensure the test infrastructure is working correctly.
+
+#### 2. HelloServiceTest
+This class, HelloServiceTest, is a unit test for the HelloService class using JUnit 5. It contains several test methods that validate the behavior of different methods in HelloService.
+- testHello() checks if the hello() method returns the expected "Hello World" string.
+- testBye() verifies that the bye() method returns "Bye!".
+- testGreeting() ensures the greeting() method correctly greets the provided name.
+- testTime() tests if the time() method returns the current time in the correct format.
+- testDayOfWeek() checks if the dayOfWeek() method correctly returns the current day of the week.
 
 ## Author
 This project was developed by Juan David García Pulido.
