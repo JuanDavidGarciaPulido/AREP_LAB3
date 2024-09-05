@@ -54,7 +54,8 @@ Before install and run the project you will need:
    java -cp target/lab03Arep-1.0-SNAPSHOT.jar edu.escuelaing.arep.app.MyOwnTest.JUnitECI edu.escuelaing.arep.app.MyOwnTest.ClassToBeTested
     ```
 
-   (FOTO)
+   <img width="1336" alt="Captura de pantalla 2024-09-04 a la(s) 11 49 36 p  m" src="https://github.com/user-attachments/assets/a705acb3-86f2-4b9b-bde7-eba9c31bee6c">
+
 
 4. **Run the SpringECI Utility**:
     ``` bash
