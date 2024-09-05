@@ -1,4 +1,4 @@
-package edu.escuelaing.app.MyOwnSpringBoot;
+package edu.escuelaing.arep.app.MyOwnSpringBoot;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

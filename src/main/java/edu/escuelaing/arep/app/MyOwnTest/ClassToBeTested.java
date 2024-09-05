@@ -1,6 +1,6 @@
-package edu.escuelaing.app.MyOwnTest;
+package edu.escuelaing.arep.app.MyOwnTest;
 
-import edu.escuelaing.app.MyOwnSpringBoot.Test;
+import edu.escuelaing.arep.app.MyOwnSpringBoot.Test;
 
 /**
  * A class used for testing purposes.

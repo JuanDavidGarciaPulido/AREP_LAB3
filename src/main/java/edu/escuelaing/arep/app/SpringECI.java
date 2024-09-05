@@ -1,9 +1,9 @@
-package edu.escuelaing.app;
+package edu.escuelaing.arep.app;
 
 
-import edu.escuelaing.app.MyOwnSpringBoot.GetMapping;
-import edu.escuelaing.app.MyOwnSpringBoot.RequestParam;
-import edu.escuelaing.app.MyOwnSpringBoot.RestController;
+import edu.escuelaing.arep.app.MyOwnSpringBoot.GetMapping;
+import edu.escuelaing.arep.app.MyOwnSpringBoot.RequestParam;
+import edu.escuelaing.arep.app.MyOwnSpringBoot.RestController;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
