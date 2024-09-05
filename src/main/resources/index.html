@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Form with GET</h1>
+<form action="/hello">
+    <label for="name">Fruta:</label><br>
+    <input type="text" id="name" name="name" value="manzanas.png"><br><br>
+    <input type="button" value="Submit" onclick="loadGetMsg()">
+</form>
+<div id="getrespmsg"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
