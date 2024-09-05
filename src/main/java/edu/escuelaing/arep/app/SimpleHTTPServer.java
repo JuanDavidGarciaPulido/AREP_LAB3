@@ -17,7 +17,7 @@ import java.util.Map;
  * A simple HTTP server that handles incoming HTTP requests and dispatches them to appropriate methods
  * based on annotations in the service class.
  */
-public class SimpleHttpServer {
+public class SimpleHTTPServer {
     private static final String STATIC_FILES_DIR = "src/main/resources";
     private static final Map<String, Method> services = new HashMap<>();
     private static Object serviceInstance;
