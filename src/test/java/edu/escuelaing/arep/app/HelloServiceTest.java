@@ -40,7 +40,8 @@ class HelloServiceTest {
     @Test
     void testTime() {
         String result = HelloService.time();
-        assertEquals("The current time is: " + java.time.LocalTime.now(), result);
+        String expectedTime = "The current time is: " + java.time.LocalTime.now().withNano(0);
+        assertEquals(expectedTime, result);
     }
     @Test
     void testDayOfWeek() {
