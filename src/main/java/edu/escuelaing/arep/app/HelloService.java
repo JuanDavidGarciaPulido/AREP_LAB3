@@ -37,7 +37,7 @@ public class HelloService {
      */
     @GetMapping("/time")
     public static String time() {
-        return "The current time is: " + java.time.LocalTime.now();
+        return "The current time is: " + java.time.LocalTime.now().withNano(0);
     }
 
     /**
