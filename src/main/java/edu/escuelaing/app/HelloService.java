@@ -1,8 +1,8 @@
-package co.edu.escuelaing.app;
+package edu.escuelaing.app;
 
-import co.edu.escuelaing.app.MyOwnSpringBoot.GetMapping;
-import co.edu.escuelaing.app.MyOwnSpringBoot.RequestParam;
-import co.edu.escuelaing.app.MyOwnSpringBoot.RestController;
+import edu.escuelaing.app.MyOwnSpringBoot.GetMapping;
+import edu.escuelaing.app.MyOwnSpringBoot.RequestParam;
+import edu.escuelaing.app.MyOwnSpringBoot.RestController;
 
 import java.io.File;
 import java.io.IOException;

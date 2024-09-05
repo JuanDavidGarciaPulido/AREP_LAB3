@@ -1,8 +1,8 @@
-package co.edu.escuelaing.app;
+package edu.escuelaing.app;
 
-import co.edu.escuelaing.app.MyOwnSpringBoot.GetMapping;
-import co.edu.escuelaing.app.MyOwnSpringBoot.RequestParam;
-import co.edu.escuelaing.app.MyOwnSpringBoot.RestController;
+import edu.escuelaing.app.MyOwnSpringBoot.GetMapping;
+import edu.escuelaing.app.MyOwnSpringBoot.RequestParam;
+import edu.escuelaing.app.MyOwnSpringBoot.RestController;
 
 import java.io.*;
 import java.lang.reflect.Method;
@@ -23,7 +23,7 @@ public class SimpleHttpServer {
     private static Object serviceInstance;
 
     public static void main(String[] args) throws Exception {
-        Class<?> c = Class.forName("co.edu.escuelaing.app.HelloService");
+        Class<?> c = Class.forName("edu.escuelaing.app.HelloService");
         if (c.isAnnotationPresent(RestController.class)) {
             serviceInstance = c.getDeclaredConstructor().newInstance();
             Method[] methods = c.getDeclaredMethods();

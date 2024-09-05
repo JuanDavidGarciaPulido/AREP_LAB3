@@ -1,4 +1,4 @@
-package co.edu.escuelaing.app.MyOwnSpringBoot;
+package edu.escuelaing.app.MyOwnSpringBoot;
 
 
 import java.lang.annotation.ElementType;

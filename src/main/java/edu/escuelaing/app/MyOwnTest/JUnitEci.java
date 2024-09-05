@@ -1,6 +1,6 @@
-package co.edu.escuelaing.app.MyOwnTest;
+package edu.escuelaing.app.MyOwnTest;
 
-import co.edu.escuelaing.app.MyOwnSpringBoot.Test;
+import edu.escuelaing.app.MyOwnSpringBoot.Test;
 
 import java.lang.reflect.Method;
 
