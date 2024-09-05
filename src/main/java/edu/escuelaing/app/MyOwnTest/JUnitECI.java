@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
  * A utility class for running tests annotated with @Test.
  * Demonstrates how to invoke test methods and handle their results.
  */
-public class JUnitEci {
+public class JUnitECI {
     public static void main(String[] args) {
         if (args.length == 0) {
             System.out.println("Please provide the class name as an argument.");

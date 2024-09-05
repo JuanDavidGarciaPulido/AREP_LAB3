@@ -5,7 +5,7 @@ import edu.escuelaing.app.MyOwnSpringBoot.Test;
 /**
  * A class used for testing purposes.
  * This class contains several static methods annotated with the {@link Test} annotation.
- * Each method is a unit test that is executed by the {@link JUnitEci} class.
+ * Each method is a unit test that is executed by the {@link JUnitECI} class.
  *
  * The class includes methods that are designed to either pass or fail to demonstrate the test functionality.
  *
