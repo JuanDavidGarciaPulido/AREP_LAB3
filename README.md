@@ -78,7 +78,17 @@ Access the Web Server:
 
 <img width="846" alt="image" src="https://github.com/user-attachments/assets/6910bbca-bb6f-4e13-aee7-bc717c96a47b">
 
+localhost:8080/greeting?name=JuanDavid
 
+<img width="1045" alt="image" src="https://github.com/user-attachments/assets/5b57f7dc-81a6-4581-9123-5ae7f7218339">
+
+http://localhost:8080/time
+
+<img width="1045" alt="image" src="https://github.com/user-attachments/assets/76e690ed-4d24-475c-b79c-ea5b70d47bdc">
+
+http://localhost:8080/dayofweek
+
+<img width="1045" alt="image" src="https://github.com/user-attachments/assets/0630addc-e6db-486e-868b-f366b66b8785">
 
 
 ## Configuration
@@ -134,7 +144,7 @@ Run the command:
    mvn test
 ```
 
-(FOTO)
+<img width="887" alt="image" src="https://github.com/user-attachments/assets/2ec5f8c9-2673-4492-bad2-91c57a4ed8a6">
 
 ### Test Descriptions
 #### 1. AppTest
